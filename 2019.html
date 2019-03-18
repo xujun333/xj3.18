@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h2>-webkit-text-size-adjust: none; // Chrome 中文界面下默认会将小于 12px 的文本强制按照 12px 显示, </h2>
+	<h1></h1>
+	<div class="box">
+		
+	</div>
+</body>
+<script>
+	/*var box = document.querySelector(".box")
+	var a = document.createElement("div")
+	a.innerText='疏亮海傻吊'
+	box.appendChild(a)
+
+
+	function big(){
+		return function(){
+			console.log(2)
+		}
+	}
+	var fun = big()
+	console.log(fun)
+	fun()
+
+	var num =23.1134
+	var num2 = 2
+	var aa =num.toFixed(2)
+	var bb = num2.toFixed(2)
+	console.log(aa,bb)*/
+
+	function Animal(name){
+       this.name = name;
+   }
+   function Tiger(color){
+       this.color = color;
+   }
+//   var tiger = new Tiger('yellow');
+//   console.log(tiger.color);
+//   console.log(tiger.name);  //undefined
+//      Tiger.prototype = new Animal('老虎');   //一种方式
+   Object.prototype.name = '大老虎';   //第二种方式
+        var tiger = new Tiger('yellow');
+        console.log(tiger.color);
+        console.log(tiger.name);
+        var o = {}
+        console.log(Object.prototype)
+</script>
+</html>
